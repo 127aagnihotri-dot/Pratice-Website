@@ -70,3 +70,12 @@ li+li{
         grid-row:span 1;
     }
 }
+#Rememberme{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    font-weight: bold;
+    background-color:orange;
+}
