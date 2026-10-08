@@ -11,8 +11,8 @@ function button1(){
 }
 function button2(){
     let increment1 = JSON.parse(document.getElementById("Button2").innerText);
-    sessionStorage.setItem("Button2", increment1);
     increment1++;
+    sessionStorage.setItem("Button2", increment1);
     document.getElementById("Button2").innerText=increment1;
 }
 function unloading(){
