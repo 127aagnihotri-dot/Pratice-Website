@@ -15,11 +15,14 @@ function button2(){
     increment1++;
     document.getElementById("Button2").innerText=increment1;
 }
-function loading(){
-    if (localStorage.getItem("")){
-        document.getElementById("loading").innerText = localStorage.getItem("Button1");
+function unloading(){
+    const savedButton1 = localStorage.getItem("Button1");
+    if (savedButton1) {
+        document.getElementById("Button1").innerText = localStorage.getItem("Button1");
     }
-    if (sessionStorage.getItem("")){
-        document.getElementById("loading").innerText = sessionStorage.getItem("Button2");
+
+    const savedButton2 = sessionStorage.getItem("Button2");
+    if (savedButton2) {
+        document.getElementById("Button2").innerText = sessionStorage.getItem("Button2");
     }
 }
